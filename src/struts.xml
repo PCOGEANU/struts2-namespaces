@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+   "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+   "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+<constant name="struts.devMode" value="true" />
+   <package name="default" namespace="/looks" extends="struts-default">
+      <action name="getLook" class="org.paula.looks.LookAction" method="execute">
+            <result name="success">/jsp/SuccessLook.jsp</result>
+            <result name="error">/jsp/ErrorLook.jsp</result>
+      </action>
+   </package>
+   
+   <package name="voyage" namespace="/voyages" extends="struts-default">
+      <action name="getVoyage" class="org.paula.voyages.VoyageAction" method="execute">
+            <result name="success">/jsp/SuccessVoyage.jsp</result>
+            <result name="success">/jsp/ErrorVoyage.jsp</result>
+      </action>
+   </package>
+</struts>
