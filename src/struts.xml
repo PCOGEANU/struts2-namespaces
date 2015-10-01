@@ -14,7 +14,7 @@
    <package name="voyage" namespace="/voyages" extends="struts-default">
       <action name="getVoyage" class="org.paula.voyages.VoyageAction" method="execute">
             <result name="success">/jsp/SuccessVoyage.jsp</result>
-            <result name="success">/jsp/ErrorVoyage.jsp</result>
+            <result name="error">/jsp/ErrorVoyage.jsp</result>
       </action>
    </package>
 </struts>
